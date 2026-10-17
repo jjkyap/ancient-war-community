@@ -1,0 +1,9 @@
+// Validation: uncompiled. No fixed grid dimensions or player cap invented.
+struct AWPurchaseGridCell {
+    int rosterId;
+    int row;      // Front-to-back increasing.
+    int column;   // Left-to-right increasing.
+    int purchaseId; // c_awInvalidId means empty; occupancy remains persistent.
+};
+// Contract: validate bounds and ownership before moving/swapping purchases.
+// Scan row-major, skip empty cells. Never compact the purchase grid itself.

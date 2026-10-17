@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "ruleset": "classic",
+  "regular_rounds": 7,
+  "army_groups_per_player": 3,
+  "lanes": ["upper", "lower"],
+  "max_flags_per_lane": 2,
+  "purchase_grid": { "rows": null, "columns": null },
+  "deployment_capacity": null,
+  "economy": {
+    "starting_gold": null,
+    "starting_wood": null,
+    "kill_wood": null,
+    "victory_wood": null,
+    "wood_to_gold": null
+  },
+  "factions": [],
+  "units": [],
+  "packages": []
+}

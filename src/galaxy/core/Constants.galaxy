@@ -1,0 +1,8 @@
+// Validation: not compiled/type-checked in Galaxy Editor or Modkit yet.
+// Source: supplied gameplay specification. Generated equivalents: tools/generate.py.
+const int c_awRegularRounds = 7;
+const int c_awArmyGroupsPerPlayer = 3;
+const int c_awMaxFlagsPerLane = 2;
+const int c_awLaneUpper = 0;
+const int c_awLaneLower = 1;
+const int c_awInvalidId = -1;

@@ -1,0 +1,12 @@
+// Validation: uncompiled. Persistent state; no battlefield handles here.
+struct AWPlayerState {
+    int playerId;
+    int gold;
+    int wood;
+};
+
+struct AWArmyGroupState {
+    int ownerPlayerId;
+    int groupIndex; // 0..2; an internal identifier, not a lane or grid position.
+    int rosterId;   // Stable purchase roster; storage allocator not implemented.
+};

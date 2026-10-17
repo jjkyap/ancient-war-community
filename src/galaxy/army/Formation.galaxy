@@ -1,0 +1,11 @@
+// Validation: uncompiled. Data contract only; no deployment/engine APIs invoked.
+struct AWFormationEntry {
+    int purchaseId;
+    int unitDefinitionId;
+    int memberIndex;
+    int copyIndex;
+};
+// Future AWBuildFormation takes an immutable roster/grid and confirmed capacity,
+// emits a compact deployed prefix and reserve suffix, and never edits purchases.
+// tools/awdev/formation.py is the tested development reference for this contract.
+// No physical coordinates, reserve selection policy, or unit handles stored here.

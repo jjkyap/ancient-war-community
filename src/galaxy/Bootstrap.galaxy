@@ -1,0 +1,12 @@
+// Import files beneath AW/ in a real map before using this include graph.
+// Validation: NOT compiled, type-checked, or run in StarCraft II.
+include "AW/core/Constants"
+include "AW/core/Phases"
+include "AW/state/Player"
+include "AW/economy/Economy"
+include "AW/army/Definitions"
+include "AW/army/PurchaseGrid"
+include "AW/army/Formation"
+
+// No engine entry point or gameplay side effects. Future Editor-owned init
+// trigger will call a validated game controller; do not replace MapScript.galaxy.

@@ -1,0 +1,8 @@
+// Validation: uncompiled. Pure affordability predicate; does not mutate balances.
+bool AWCanAfford(int gold, int wood, int goldCost, int woodCost) {
+    return gold >= 0 && wood >= 0 && goldCost >= 0 && woodCost >= 0
+        && gold >= goldCost && wood >= woodCost;
+}
+// Future transaction boundary must validate phase, owner, funds, placement, and
+// definitions BEFORE changing balances/roster atomically. Unknown cost is not 0.
+// Wood conversion, rewards, and final-unit purchases await observed rules.

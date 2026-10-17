@@ -1,0 +1,19 @@
+// Validation: uncompiled. Definition indices will resolve through generated data.
+struct AWUnitDefinition {
+    int definitionId;
+    string catalogLink;
+};
+
+struct AWPackageMember {
+    int packageDefinitionId;
+    int memberOrder;
+    int unitDefinitionId;
+    int count;
+};
+
+struct AWPackagePurchase {
+    int purchaseId; // Stable identity even when two purchases share a definition.
+    int packageDefinitionId;
+    int armyGroupIndex;
+};
+// Catalog registration and unknown costs are intentionally not implemented.
